@@ -279,7 +279,7 @@ func resourceMongoDBAtlasAlertConfiguration() *schema.Resource {
 							Optional: true,
 							ValidateFunc: validation.StringInSlice([]string{"EMAIL", "SMS", pagerDuty, "SLACK",
 								"FLOWDOCK", "DATADOG", opsGenie, victorOps,
-								"WEBHOOK", "USER", "TEAM", "GROUP", "ORG"}, false),
+								"WEBHOOK", "USER", "TEAM", "GROUP", "ORG", "MICROSOFT_TEAMS"}, false),
 						},
 						"username": {
 							Type:     schema.TypeString,
